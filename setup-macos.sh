@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Github SSH Key Generation
 echo "Generating SSH Key for Github."
