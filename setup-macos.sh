@@ -17,9 +17,8 @@ read -p "Press [enter] when you're ready to continue."
 echo "Installing xcode extras."
 xcode-select --install
 
-# Pull down dotfiles repo and symlink needed files
+# Symlink dotfiles from downloaded repo
 cd ~
-git clone git@github.com:bearguns/bearguns-dotfiles.git
 ln -s ~/bearguns-dotfiles/Brewfile
 ln -s ~/bearguns-dotfiles/.gitignore_global
 
