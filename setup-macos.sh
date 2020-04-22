@@ -37,8 +37,9 @@ brew bundle
 echo "What name are you using for Git?"
 read full_name
 
-git config --global user.email $github_email
+git config --global user.email "$github_email"
 git config --global user.name "$full_name"
+git config --global core.excludesfile ~/.gitignore_global
 
 # Fish Shell Setup & Configuration
 echo "Configuring Fish shell for fun and profit."
@@ -51,12 +52,10 @@ curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fi
 cd ~/.config/fish/
 ln -s ~/bearguns-dotfiles/config.fish
 
-
 # Clone Emacs configuration and symlink to .emacs.d
 cd ~
 git clone git@github.com:bearguns/bearguns-emacs.git
 ln -s ~/bearguns-emacs/ ~/.emacs.d/
-
 
 # macOS Defaults Configuration
 echo "Setting up Mac Defaults"
