@@ -1,0 +1,16 @@
+# Mac stuff
+.DS_Store
+
+# Logs
+npm-debug.log
+log/
+*.log
+
+# Emacs Stuff
+\#*\#
+.\#*
+.projectile
+.dir-locals.el
+
+# IDE stuff
+.vscode
