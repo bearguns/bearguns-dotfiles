@@ -34,6 +34,7 @@ cask "transmission"
 cask "discord"
 cask "etcher"
 cask "1password"
+cask "pcloud-drive"
 
 mas "Things 3",         id: 904280696
 mas "Mitch for Twitch", id: 1231862724
