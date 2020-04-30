@@ -30,11 +30,8 @@ cask "font-fira-code"
 cask "alfred"
 cask "flux"
 cask "postman"
-cask "transmission"
-cask "discord"
-cask "etcher"
 cask "1password"
-cask "pcloud-drive"
+cask "tunnelblick"
 
 mas "Things 3",         id: 904280696
 mas "Mitch for Twitch", id: 1231862724
