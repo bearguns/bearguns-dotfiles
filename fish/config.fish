@@ -12,8 +12,16 @@ if test (uname -s) = "Darwin"
 end
 
 # Ruby Stuff
-set PATH ~/.rbenv/shims $PATH
-export RUBY_CONFIGURE_OPTS="--with-oppenssl-dir=(brew --prefix openssl@1.1)"
+set PATH ~/.rbenv/bin $PATH
+export RUBY_CONFIGURE_OPTS="--with-oppenssl-dir="(brew --prefix openssl@1.1)
+rbenv init - | source
+
+# Aliases for common operations
+## Docker Aliases
+alias dcup 'docker-compose up'
+alias dcdown 'docker-compose down'
+alias dps 'docker ps'
+alias dimages 'docker images'
 
 starship init fish | source
 
